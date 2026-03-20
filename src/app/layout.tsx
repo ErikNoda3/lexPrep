@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   description: "App de estudos jurídicos (Next.js + Postgres)",
 };
 
+/** Sidebar usa Prisma; sem isso o `next build` tenta prerender e falha se o DB não estiver acessível. */
+export const dynamic = "force-dynamic";
+
 export default function RootLayout({
   children,
 }: Readonly<{
