@@ -2,17 +2,26 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 
 export default async function Sidebar() {
-  const [totalCount, groupedByMateria] = await Promise.all([
-    prisma.question.count(),
-    prisma.question.groupBy({
-      by: ["materia"],
-      _count: { _all: true },
-    }),
-  ]);
+  let totalCount = 0;
+  let countByMateria: Record<string, number> = {};
 
-  const countByMateria = Object.fromEntries(
-    groupedByMateria.map((g) => [g.materia, g._count._all])
-  ) as Record<string, number>;
+  try {
+    const [total, groupedByMateria] = await Promise.all([
+      prisma.question.count(),
+      prisma.question.groupBy({
+        by: ["materia"],
+        _count: { _all: true },
+      }),
+    ]);
+    totalCount = total;
+    countByMateria = Object.fromEntries(
+      groupedByMateria.map((g) => [g.materia, g._count._all])
+    );
+  } catch (err) {
+    if (process.env.NODE_ENV === "development") {
+      console.error("[Sidebar] Falha ao carregar contagens:", err);
+    }
+  }
 
   const getCount = (materia: string) => countByMateria[materia] ?? 0;
 
