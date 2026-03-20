@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Question {
+  id          Int      @id @default(autoincrement())
+  materia     String
+  dificuldade String
+  enunciado   String
+  opcoes      String[]
+  gabarito    Int
+  comentario  String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([materia])
+  @@index([dificuldade])
+}
+
+model Resumo {
+  id        Int      @id @default(autoincrement())
+  chave     String   @unique
+  titulo    String
+  html      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model UserSession {
+  /// Identificador anônimo do usuário (gerado no browser e persistido via cookie/localStorage).
+  sessionId            String @id
+  questoesRespondidas  Int    @default(0)
+  acertos               Int    @default(0)
+  simuladosRealizados  Int    @default(0)
+  diasSequenciaAtual    Int   @default(0)
+  progressoPorMateria  Json  @default("{}")
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  simulados SimuladoAttempt[]
+}
+
+model SimuladoAttempt {
+  id           Int      @id @default(autoincrement())
+  sessionId   String
+  qtdQuestoes Int
+  tempoPorQSec Int
+  acertos      Int      @default(0)
+  respondidas  Int      @default(0)
+  createdAt    DateTime @default(now())
+
+  session UserSession @relation(fields: [sessionId], references: [sessionId], onDelete: Cascade)
+
+  @@index([sessionId])
+}
