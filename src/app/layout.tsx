@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AppShell from "@/components/AppShell";
 import Sidebar from "@/components/Sidebar";
-import TopNav from "@/components/TopNav";
 import SessionInit from "@/components/SessionInit";
 
 export const metadata: Metadata = {
   title: "LexPrep — ENAM",
   description: "App de estudos jurídicos (Next.js + Postgres)",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -24,20 +29,7 @@ export default function RootLayout({
       </head>
       <body>
         <SessionInit />
-        <header>
-          <div className="logo">
-            LexPrep <span>ENAM</span>
-            <span className="badge-enam">OAB</span>
-          </div>
-          <TopNav />
-        </header>
-
-        <div className="app">
-          <aside className="sidebar">
-            <Sidebar />
-          </aside>
-          <main className="main">{children}</main>
-        </div>
+        <AppShell sidebar={<Sidebar />}>{children}</AppShell>
       </body>
     </html>
   );

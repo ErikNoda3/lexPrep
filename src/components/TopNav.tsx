@@ -15,7 +15,7 @@ export default function TopNav() {
   const pathname = usePathname();
 
   return (
-    <nav>
+    <nav className="top-nav" aria-label="Navegação principal">
       {NAV.map((item) => {
         const isActive =
           item.href === "/"

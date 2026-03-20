@@ -375,7 +375,7 @@ export default function SimulationClient() {
             </div>
           </div>
 
-          <div style={{ display: "flex", gap: ".75rem", marginTop: "1rem" }}>
+          <div className="sim-actions-row">
             <button className="btn btn-outline" onClick={simPular}>
               Pular questão
             </button>
@@ -404,18 +404,13 @@ export default function SimulationClient() {
 
       {phase === "resultado" ? (
         <div className="page active" id="simulado-resultado">
-          <div className="progress-section" style={{ textAlign: "center", padding: "3rem" }}>
-            <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>⚖</div>
-            <div className="progress-title" style={{ fontSize: "1.4rem", marginBottom: ".5rem" }}>
+          <div className="progress-section sim-resultado-panel">
+            <div className="sim-resultado-icon">⚖</div>
+            <div className="progress-title">
               Simulado concluído!
             </div>
             <div
-              style={{
-                fontSize: "4rem",
-                fontFamily: "var(--serif)",
-                color: "var(--gold)",
-                margin: ".75rem 0",
-              }}
+              className="sim-resultado-pct"
               id="res-pct"
             >
               {resultadoState.pct}%
@@ -429,7 +424,7 @@ export default function SimulationClient() {
                     ? "Muito bem! Você está acima da média do ENAM."
                     : "Excelente! Desempenho de aprovado. Continue assim!"}
             </div>
-            <div style={{ display: "flex", gap: "1rem", justifyContent: "center", marginTop: "1.5rem" }}>
+            <div className="sim-resultado-actions">
               <button className="btn btn-outline" onClick={() => setPhase("inicio")}>
                 Novo simulado
               </button>

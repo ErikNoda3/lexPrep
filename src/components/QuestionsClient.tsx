@@ -36,6 +36,11 @@ export default function QuestionsClient({
   );
   const [aiTextById, setAiTextById] = useState<Record<number, string>>({});
 
+  useEffect(() => {
+    setMateria(initialFilters.materia ?? "");
+    setDificuldade(mapDifficultyToValue(initialFilters.dificuldade));
+  }, [initialFilters.materia, initialFilters.dificuldade]);
+
   const query = useMemo(() => {
     const params = new URLSearchParams();
     if (materia) params.set("materia", materia);
@@ -80,6 +85,7 @@ export default function QuestionsClient({
     "Trabalho",
     "Tributário",
     "Administrativo",
+    "Ética",
   ];
 
   return (

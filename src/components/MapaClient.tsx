@@ -124,14 +124,7 @@ export default function MapaClient() {
 
       <div className="progress-section">
         <div className="progress-title">Análise detalhada de desempenho</div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gap: "1rem",
-            marginTop: "1rem",
-          }}
-        >
+        <div className="mapa-stats-grid">
           <div
             style={{
               background: "var(--light)",
