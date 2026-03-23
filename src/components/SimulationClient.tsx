@@ -5,6 +5,10 @@ import { type Questao } from "@/lib/data/questions";
 
 type Phase = "inicio" | "rodando" | "resultado";
 
+function optionLetterFromIndex(index: number): Questao["gabarito"] {
+  return String.fromCharCode(65 + index) as Questao["gabarito"];
+}
+
 export default function SimulationClient() {
   const [phase, setPhase] = useState<Phase>("inicio");
 
@@ -79,7 +83,7 @@ export default function SimulationClient() {
 
     setSimRespondidas((n) => n + 1);
 
-    const isCorrect = opcao === q.gabarito;
+    const isCorrect = optionLetterFromIndex(opcao) === q.gabarito;
     if (isCorrect) setSimAcertos((n) => n + 1);
 
     // tranca e avança manualmente com botões:
@@ -105,7 +109,7 @@ export default function SimulationClient() {
     clearTimer();
 
     setSimRespondidas((n) => n + 1);
-    if (opcao === q.gabarito) setSimAcertos((n) => n + 1);
+    if (optionLetterFromIndex(opcao) === q.gabarito) setSimAcertos((n) => n + 1);
   }
 
   function simPular() {
@@ -149,7 +153,7 @@ export default function SimulationClient() {
       const answeredOpt = answeredByIdx[idx];
       if (answeredOpt === undefined || answeredOpt === null) return acc;
 
-      const isCorrect = answeredOpt === q.gabarito;
+      const isCorrect = optionLetterFromIndex(answeredOpt) === q.gabarito;
       const current = acc[q.materia] ?? { respondidas: 0, acertos: 0 };
       acc[q.materia] = {
         respondidas: current.respondidas + 1,
@@ -345,7 +349,7 @@ export default function SimulationClient() {
               <div className="q-text">{q.enunciado}</div>
               <ul className="options">
                 {q.opcoes.map((o, j) => {
-                  const isCorrect = j === q.gabarito;
+                  const isCorrect = optionLetterFromIndex(j) === q.gabarito;
                   const isSelected = answered !== undefined && answered !== null && j === answered;
                   const isWrongSelected = answered !== undefined && answered !== null && isSelected && !isCorrect;
 

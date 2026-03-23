@@ -61,7 +61,7 @@ export default function DashboardStatsClient() {
       {stats ? (
         <>
           <div className="cards-grid">
-            <div className="stat-card gold">
+            <div className="stat-card">
               <div className="label">Questões respondidas</div>
               <div className="value">{stats.questoesRespondidasTotal}</div>
               <div className="sub">{formatWeeklyDelta(stats.deltaQuestoesSemana)}</div>

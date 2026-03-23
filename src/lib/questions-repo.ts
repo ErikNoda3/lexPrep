@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import { BANCO_QUESTOES, type Questao } from "@/lib/data/questions";
+import { matchesMateriaFilter, normalizeMateriaFilter } from "@/lib/materias";
 
 type ListFilters = {
   materia?: string;
@@ -10,7 +11,7 @@ export async function listQuestions(filters: ListFilters): Promise<Questao[]> {
   // Fallback em memória: o app continua funcionando mesmo sem Postgres rodando.
   try {
     const where: Record<string, unknown> = {};
-    if (filters.materia) where.materia = filters.materia;
+    if (filters.materia) where.materia = normalizeMateriaFilter(filters.materia);
     if (filters.dificuldade) where.dificuldade = filters.dificuldade;
 
     const rows = await prisma.question.findMany({
@@ -24,12 +25,15 @@ export async function listQuestions(filters: ListFilters): Promise<Questao[]> {
       dificuldade: r.dificuldade as Questao["dificuldade"],
       enunciado: r.enunciado,
       opcoes: r.opcoes,
-      gabarito: r.gabarito,
+      gabarito: r.gabarito as Questao["gabarito"],
       comentario: r.comentario,
+      fonte: r.fonte ?? "",
     }));
   } catch {
     let lista = [...BANCO_QUESTOES];
-    if (filters.materia) lista = lista.filter((q) => q.materia === filters.materia);
+    if (filters.materia) {
+      lista = lista.filter((q) => matchesMateriaFilter(q.materia, filters.materia));
+    }
     if (filters.dificuldade)
       lista = lista.filter((q) => q.dificuldade === filters.dificuldade);
     return lista;
@@ -46,8 +50,9 @@ export async function getQuestionById(id: number): Promise<Questao | null> {
       dificuldade: row.dificuldade as Questao["dificuldade"],
       enunciado: row.enunciado,
       opcoes: row.opcoes,
-      gabarito: row.gabarito,
+      gabarito: row.gabarito as Questao["gabarito"],
       comentario: row.comentario,
+      fonte: row.fonte ?? "",
     };
   } catch {
     return BANCO_QUESTOES.find((q) => q.id === id) ?? null;

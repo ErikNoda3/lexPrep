@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
-import Sidebar from "@/components/Sidebar";
 import SessionInit from "@/components/SessionInit";
 
 export const metadata: Metadata = {
@@ -12,6 +11,7 @@ export const metadata: Metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -23,13 +23,13 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body className="antialiased">
         <SessionInit />
-        <AppShell sidebar={<Sidebar />}>{children}</AppShell>
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

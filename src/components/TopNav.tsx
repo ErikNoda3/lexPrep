@@ -4,11 +4,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV = [
-  { href: "/", label: "Início" },
-  { href: "/questoes", label: "Questões" },
-  { href: "/simulado", label: "Simulado" },
-  { href: "/resumos", label: "Resumos" },
-  { href: "/mapa", label: "Mapa" },
+  {
+    href: "/",
+    label: "Início",
+    activePrefixes: ["/"],
+  },
+  {
+    href: "/area-estudo",
+    label: "Área de Estudo",
+    activePrefixes: ["/area-estudo", "/resumos", "/sumulas"],
+  },
+  {
+    href: "/area-pratica",
+    label: "Área de Prática",
+    activePrefixes: ["/area-pratica", "/questoes", "/simulado", "/mapa"],
+  },
 ] as const;
 
 export default function TopNav() {
@@ -17,10 +27,9 @@ export default function TopNav() {
   return (
     <nav className="top-nav" aria-label="Navegação principal">
       {NAV.map((item) => {
-        const isActive =
-          item.href === "/"
-            ? pathname === "/"
-            : pathname.startsWith(item.href);
+        const isActive = item.activePrefixes.some(
+          (p) => pathname === p || pathname.startsWith(p + "/"),
+        );
 
         return (
           <Link

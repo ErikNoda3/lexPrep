@@ -18,8 +18,9 @@ model Question {
   dificuldade String
   enunciado   String
   opcoes      String[]
-  gabarito    Int
+  gabarito    String
   comentario  String
+  fonte       String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
@@ -34,6 +35,22 @@ model Resumo {
   html      String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+/// Súmulas do STF persistidas (nome físico da tabela: `sumulasSTF`).
+model SumulasSTF {
+  id        Int      @id @default(autoincrement())
+  titulo    String
+  descricao String
+  dataAprovacao String @default("Não informado")
+  fontePublicacao String @default("Não informado")
+  referenciaLegislativa String @default("Não informado")
+  precedentes String @default("Não informado")
+  observacao String @default("Não informado")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("sumulasSTF")
 }
 
 model UserSession {

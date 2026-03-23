@@ -2,6 +2,7 @@ import { PrismaClient } from "@/generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { BANCO_QUESTOES } from "@/lib/data/questions";
 import { RESUMOS } from "@/lib/data/resumos";
+import { BANCO_SUMULAS_STF } from "@/lib/data/sumulasSTF";
 
 const prisma = new PrismaClient({
   adapter: new PrismaPg({
@@ -12,7 +13,9 @@ const prisma = new PrismaClient({
 });
 
 async function main() {
-  // Limpa e reinsere dados iniciais.
+  // Ao trocar o banco de questões no seed, queremos remover o conteúdo antigo.
+  await prisma.question.deleteMany();
+
   if (BANCO_QUESTOES.length > 0) {
     await prisma.question.createMany({
       data: BANCO_QUESTOES.map((q) => ({
@@ -23,8 +26,10 @@ async function main() {
         opcoes: q.opcoes,
         gabarito: q.gabarito,
         comentario: q.comentario,
+        fonte: q.fonte,
       })),
-      skipDuplicates: true,
+      // Depois do `deleteMany`, não existe mais duplicidade; mantemos a insercao deterministica.
+      skipDuplicates: false,
     });
   }
 
@@ -37,6 +42,23 @@ async function main() {
         html: r.html,
       })),
       skipDuplicates: true,
+    });
+  }
+
+  await prisma.sumulasSTF.deleteMany();
+  if (BANCO_SUMULAS_STF.length > 0) {
+    await prisma.sumulasSTF.createMany({
+      data: BANCO_SUMULAS_STF.map((s) => ({
+        id: s.id,
+        titulo: s.titulo,
+        descricao: s.descricao,
+        dataAprovacao: s.dataAprovacao,
+        fontePublicacao: s.fontePublicacao,
+        referenciaLegislativa: s.referenciaLegislativa,
+        precedentes: s.precedentes,
+        observacao: s.observacao,
+      })),
+      skipDuplicates: false,
     });
   }
 }

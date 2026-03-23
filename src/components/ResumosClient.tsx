@@ -38,8 +38,7 @@ export default function ResumosClient() {
       <div className="page-header">
         <h1>Resumos por Matéria</h1>
         <p>
-          Síntese doutrinária para o ENAM · Clique para expandir e pedir
-          explicação à IA
+          Síntese doutrinária para o ENAM · Clique para expandir
         </p>
       </div>
 
@@ -116,15 +115,6 @@ export default function ResumosClient() {
               <div
                 dangerouslySetInnerHTML={{ __html: RESUMOS[aberto].html }}
               />
-            </div>
-
-            <div style={{ marginTop: "1.5rem" }}>
-              <button
-                className="btn btn-primary resumo-ai-btn"
-                onClick={explicarResumoIA}
-              >
-                ✦ Pedir explicação à IA
-              </button>
             </div>
 
             <div className={"ai-box" + (aiVisible ? " visible" : "")}>

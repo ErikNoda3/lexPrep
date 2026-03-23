@@ -19,12 +19,18 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Questão não encontrada" }, { status: 404 });
   }
 
+  const gabaritoIndex = q.gabarito.charCodeAt(0) - 65;
+  const gabaritoTexto =
+    gabaritoIndex >= 0 && gabaritoIndex < q.opcoes.length
+      ? q.opcoes[gabaritoIndex]
+      : "Alternativa não encontrada";
+
   const prompt = `Você é um professor experiente de Direito preparando estudantes para o ENAM (Exame Nacional da Advocacia). 
 Analise esta questão de forma didática e concisa (máximo 5 linhas):
 
 Matéria: ${q.materia}
 Enunciado: ${q.enunciado}
-Gabarito correto: Alternativa ${String.fromCharCode(65 + q.gabarito)} — "${q.opcoes[q.gabarito]}"
+Gabarito correto: Alternativa ${q.gabarito} — "${gabaritoTexto}"
 
 Explique por que a alternativa correta está certa, mencione o fundamento legal ou jurisprudencial relevante, e aponte por que as demais são erradas (de forma breve). Use linguagem técnica mas acessível.`;
 
