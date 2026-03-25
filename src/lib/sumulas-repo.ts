@@ -2,8 +2,7 @@ import { prisma } from "@/lib/prisma";
 import {
   BANCO_SUMULAS,
   type Sumula,
-  type SumulaTST,
-} from "@/lib/data/sumulas";
+} from "@/lib/data/sumulas";      
 import { BANCO_SUMULAS_STJ } from "@/lib/data/sumulasSTJ";
 import { BANCO_SUMULAS_TST } from "@/lib/data/sumulasTST";
 
@@ -71,14 +70,15 @@ function mapRowTst(
   r: {
     id: number;
     titulo: string;
-    subtitulo: string;
+    subtitulo?: string | null;
     descricao: string;
   },
-  fallback?: SumulaTST,
+  fallback?: Sumula,
 ): Sumula {
   const sub = r.subtitulo?.trim();
   return {
     id: r.id,
+    tribunal: "TST",
     titulo: r.titulo,
     subtitulo: sub || fallback?.subtitulo,
     descricao: r.descricao,
@@ -124,7 +124,10 @@ export async function listSumulas(filters: ListFilters): Promise<Sumula[]> {
     return [...stf, ...stj, ...tst];
   } catch {
     if (filters.tribunal === "TST") {
-      return [...BANCO_SUMULAS_TST];
+      return BANCO_SUMULAS_TST.map((s) => ({
+        ...s,
+        tribunal: "TST" as const,
+      }));
     }
     let lista = [...BANCO_SUMULAS];
     if (filters.tribunal) {

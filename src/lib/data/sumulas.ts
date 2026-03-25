@@ -11,4 +11,5 @@ export type { Sumula } from "./sumulas-types";
 export const BANCO_SUMULAS: Sumula[] = [
   ...BANCO_SUMULAS_STF,
   ...BANCO_SUMULAS_STJ,
+  ...BANCO_SUMULAS_TST,
 ];
