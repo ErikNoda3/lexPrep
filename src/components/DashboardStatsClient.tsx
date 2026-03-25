@@ -51,7 +51,7 @@ export default function DashboardStatsClient() {
 
   const taxaSubColor = useMemo(() => {
     if (!stats) return undefined;
-    return stats.taxaAcertoLabel === "Acima da média" ? "#2255A4" : undefined;
+    return stats.taxaAcertoLabel === "Acima da média" ? "var(--info)" : undefined;
   }, [stats]);
 
   const materiasOrdenadas = stats?.progressoPorMateria ?? [];
@@ -114,7 +114,7 @@ export default function DashboardStatsClient() {
 
                 const fillStyle =
                   pct < 55
-                    ? { width, background: "#AAA" }
+                    ? { width, background: "var(--mid)" }
                     : { width };
 
                 return (

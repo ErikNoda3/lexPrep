@@ -27,7 +27,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "É ilícita, uma vez que a acumulação de cargos públicos somente é autorizada na esfera da própria Administração Direta, observando-se o teto remuneratório aplicável ao Chefe do Poder Executivo respectivo.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A CF/88, art. 37, XVI, 'c', permite acumulação de dois cargos ou empregos privativos de profissionais de saúde, desde que haja compatibilidade de horários. Segundo entendimento do STF (RE 612.975 – Tema 377), o teto remuneratório incide sobre cada vínculo separadamente quando se trata de acumulação lícita de cargos, e não sobre o somatório dos ganhos.",
   },
@@ -45,7 +45,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Município prejudicado, relativamente à imputação de débito, e ao Estado-membro, em cuja estrutura se encontra o Tribunal de Contas, relativamente à multa.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Conforme jurisprudência do STF (RE 223.037 e Súmula 331 do STJ aplicada por analogia), a imputação de débito gera crédito em favor do ente prejudicado — no caso, o Município. Já a multa aplicada pelo Tribunal de Contas, por ter natureza sancionatória e integrar as receitas do próprio Tribunal/Estado, é executada pelo Estado-membro. Assim, a alternativa correta é a 'E'. (Atenção: o gabarito oficial é E.)",
   },
@@ -63,7 +63,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Nos processos perante os Tribunais de Contas asseguram-se o contraditório e a ampla defesa quando a decisão puder resultar em impacto na esfera jurídica de terceiros, excetuada a apreciação das contas de governo, por serem objeto de parecer prévio destituído de natureza decisória.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A alternativa D reflete o teor da Súmula Vinculante 14 do STF: 'É direito do defensor, no interesse do representado, ter acesso amplo aos elementos de prova que, já documentados em procedimento investigatório realizado por órgão com competência de polícia judiciária, digam respeito ao exercício do direito de defesa.' As demais alternativas contrariando jurisprudência consolidada do STF (Súmula Vinculante 5 – A/B; Súmula Vinculante 28 – C; Súmula 347 – E).",
   },
@@ -81,7 +81,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "É competência comum de todos os entes federativos legislar sobre a temática; logo, a Lei nº X é constitucional.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 22, XXVII, da CF/88 atribui à União a competência privativa para legislar sobre 'normas gerais de licitação e contratação'. O STF já decidiu que os Municípios não podem inovar nessa matéria além do que a norma geral federal permite, razão pela qual a Lei nº X, ao criar nova vedação não prevista em lei federal, é inconstitucional.",
   },
@@ -99,7 +99,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "O Poder Executivo considerará, para fins de consolidação do projeto de lei orçamentária anual, as dotações afetas a essa estrutura de poder, constantes da lei orçamentária em vigor, devidamente atualizadas pelo índice oficial de inflação.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 99, §3º, da CF/88 dispõe que, se os órgãos referidos no §2º não encaminharem as respectivas propostas orçamentárias dentro do prazo estabelecido na lei de diretrizes orçamentárias, o Poder Executivo considerará, para fins de consolidação da proposta orçamentária anual, os valores aprovados na lei orçamentária vigente, ajustados de acordo com os limites estipulados na forma do §1º.",
   },
@@ -117,7 +117,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Viola a especificidade e a divisibilidade do serviço público, pressupostos necessários à cobrança de taxas, razão pela qual nenhum dos dois entes poderia fazer a cobrança dessa taxa.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O STF firmou entendimento (Tema 16 – RE 643.247) de que a taxa de combate a incêndio não atende aos requisitos constitucionais de especificidade e divisibilidade, pois o serviço de combate a incêndio é prestado de forma geral e indivisível à toda a coletividade, sendo mais adequadamente custeado por impostos. Logo, nenhum dos entes pode cobrar essa taxa.",
   },
@@ -135,7 +135,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "inconstitucional, pois o foro por prerrogativa de função é uma garantia prevista para os servidores públicos ou agentes políticos da Administração Pública Direta, e universidades fazem parte da Administração Pública indireta, por serem autarquias públicas.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O STF fixou tese segundo a qual os Estados não podem, por meio de suas Constituições, criar foros por prerrogativa de função para autoridades cujos cargos não guardam correspondência (simetria) com as autoridades que possuem esse foro na CF/88. Reitores de universidades não têm cargo equivalente na estrutura federal que goze de foro especial, razão pela qual a norma estadual é inconstitucional.",
   },
@@ -153,7 +153,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I é correta: o caput do art. 5º da CF/88 elenca vida, liberdade, igualdade, segurança e propriedade como valores fundamentais. II é correta: direitos fundamentais representam um núcleo inderrogável de proteção individual. III é correta: segundo Robert Alexy e a doutrina constitucional predominante, quando há colisão entre princípios/direitos fundamentais, a subsunção é insuficiente, sendo necessária a ponderação. Todas as assertivas estão corretas.",
   },
@@ -171,7 +171,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "constitucional, pois as regras do processo legislativo federal não são de reprodução obrigatória nas Constituições estaduais, em razão do poder de auto-organização e autolegislação dos entes federados.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O STF firmou que o processo de reforma das Constituições estaduais deve observar simetria com a CF/88. O art. 60, §2º, da CF/88 exige 3/5 dos membros de cada Casa do Congresso em dois turnos de votação. A exigência estadual de apenas 2/3 em dois turnos, apesar de quórum numericamente semelhante, foge ao modelo federal que usa 3/5 (60%), tornando a norma inconstitucional por violação à simetria obrigatória.",
   },
@@ -189,7 +189,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Sobre a hipoteca, poderá incidir ITBI; sobre a servidão, poderá incidir o ITBI; e, sobre o usufruto, poderá incidir o ITBI.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A hipoteca é direito real de garantia, não há transmissão de propriedade nem onerosa, portanto não incide ITBI. A servidão de passagem a título oneroso é transmissão onerosa de direito real sobre imóvel, incidindo o ITBI (art. 156, II, CF). O usufruto por liberalidade (gratuito) é transmissão gratuita de direito real, incidindo o ITCMD (art. 155, I, CF). Logo: hipoteca – sem ITBI; servidão – ITBI; usufruto – ITCMD.",
   },
@@ -207,7 +207,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I e II estão corretas e formam a base da tese fixada pelo STF. III está incorreta: a união estável também é reconhecida como entidade familiar pelo art. 226, §3º, da CF/88. Portanto, apenas I e II estão corretas.",
   },
@@ -225,7 +225,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Não terá garantia no emprego contra a despedida arbitrária o empregado eleito como representante dos empregados em empresas com mais de 200 empregados, com a finalidade exclusiva de promover-lhes o entendimento direto com os empregadores, por depender de regulamentação.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A alternativa B reproduz fielmente os termos do art. 10, II, 'a' e 'b', do ADCT: vedação à despedida arbitrária da gestante desde a confirmação da gravidez até 5 meses após o parto, e do cipeiro desde o registro da candidatura até 1 ano após o término do mandato. A alternativa A está incorreta pois a Súmula 339 do TST estende a garantia ao suplente.",
   },
@@ -243,7 +243,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Salário-família pago em razão do dependente do trabalhador de baixa renda.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O adicional de remuneração para atividades penosas, previsto no art. 7º, XXIII, da CF/88, até hoje não foi regulamentado por lei. Os demais direitos listados nas alternativas já possuem regulamentação infraconstitucional em vigor (aviso prévio – Lei 12.506/2011; trabalho noturno de menores – CLT; seguro acidente – Lei 8.213/91; salário-família – Lei 8.213/91).",
   },
@@ -261,7 +261,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "II e III, apenas.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está correta: o STF reconheceu repercussão geral (Tema 1068) sobre a execução imediata de condenação pelo Júri. II está correta: STF consolidou que a vedação legal absoluta de liberdade provisória viola a presunção de inocência (HC 104.339). III está incorreta: o STF, no julgamento das ADCs 43, 44 e 54, fixou que a execução da pena somente pode ocorrer após o trânsito em julgado, vedada a execução após condenação em 2º grau.",
   },
@@ -279,7 +279,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A prisão em flagrante é legal, pois se trata de flagrante esperado.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "No flagrante esperado, a autoridade policial ou particular toma conhecimento de que o crime irá ocorrer e aguarda a sua consumação para efetuar a prisão, sem induzir ou instigar a conduta criminosa. Diferencia-se do flagrante provocado (onde há induzimento) e do preparado (onde o crime é induzido por terceiro). No caso, o gerente apenas aguardou — não induziu João à prática do crime — caracterizando o flagrante esperado.",
   },
@@ -297,7 +297,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "II e III, apenas.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está correta: conforme jurisprudência do STF e STJ, são lícitas as renovações de interceptação telefônica, desde que motivadas e observados os requisitos legais. II está incorreta: não há essa vedação absoluta no sistema jurídico brasileiro; o CPP prevê o juiz das garantias, mas não impõe impedimento ao juiz que teve contato com prova ilícita de julgar o caso. III está incorreta: a boa-fé não é exceção prevista no art. 157, §1º do CPP; as exceções são ausência de nexo causal e fonte independente.",
   },
@@ -318,7 +318,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A lei autorizadora não é compatível com a ordem constitucional vigente, uma vez que as estatais prestadoras de serviço público de atuação própria do Estado não podem fazer uso do atributo da coercibilidade inerente ao exercício do poder de polícia, mesmo que atuem em regime não concorrencial.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "No julgamento do RE 633.782 (Tema 532), o STF fixou que é constitucional a delegação do poder de polícia, por meio de lei, a pessoas jurídicas de direito privado integrantes da Administração Pública indireta de capital social majoritariamente público que prestem exclusivamente serviço público de atuação própria do Estado e em regime não concorrencial.",
   },
@@ -336,7 +336,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Em virtude do princípio da continuidade dos serviços públicos, a Administração Pública deve necessariamente rescindir a concessão se a concessionária não tiver condições de manter a prestação adequada.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O voto do relator expressou que o que vincula a Administração é a proposta mais vantajosa, ou seja, as condições acordadas na licitação. Desde que essas condições sejam mantidas, a mudança no sujeito privado (transferência da concessão) não viola, por si só, o princípio da licitação. O foco da Administração é a manutenção das condições contratuais e a continuidade do serviço, não a identidade da concessionária.",
   },
@@ -354,7 +354,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Caso haja fusão ou incorporação da empresa, a responsabilidade da sucessora continuará ampla e gerará a responsabilidade direta dos seus dirigentes ou administradores objetivamente.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 2º da Lei 12.846/2013 estabelece que as pessoas jurídicas serão responsabilizadas objetivamente, nos âmbitos administrativo e civil, pela prática dos atos previstos na lei, independentemente de dolo ou culpa. Isso é uma das características centrais da Lei Anticorrupção.",
   },
@@ -372,7 +372,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A sociedade empresária não terá direito a ser ressarcida pelo atingimento econômico de suas atividades, pois a situação ocorrida está dentro de um risco negocial, sendo previsível que o poder público possa realizar obras que venham a interferir na circulação de vias públicas.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A responsabilidade civil do Estado é objetiva (art. 37, §6º, CF/88), bastando o nexo causal entre a conduta estatal e o dano. No caso, a ocupação temporária pelo Município causou diretamente a inviabilidade do negócio, configurando dano anormal e especial que supera os riscos ordinários do empreendimento, gerando dever de indenizar independentemente de culpa.",
   },
@@ -390,7 +390,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Não corre a prescrição durante a demora do procedimento que está voltado a analisar ou estudar a pretensão deduzida no âmbito administrativo, salvo se esta versar sobre reparação material, quando o prazo prescricional retomará o seu curso após o primeiro ano, sem a decisão administrativa.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 4º do Decreto-Lei 20.910/1932 estabelece que 'não corre a prescrição durante a demora no ajuizamento da ação'. O art. 8º dispõe que a prescrição somente pode ser interrompida uma vez e recomeça a correr por metade do prazo (dois anos e meio), mas não pode ficar aquém de cinco anos — exceto se a interrupção se der na segunda metade. A citação válida interrompe a prescrição mesmo que o processo seja posteriormente anulado, conforme interpretação dominante.",
   },
@@ -408,7 +408,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A decisão judicial não deve trazer qualquer tipo de determinação ao gestor público, sob pena de interferir na discricionariedade administrativa na tomada de decisão sobre as políticas públicas a serem implementadas.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "No julgamento do RE 684.612 (Tema 698), o STF fixou que o Judiciário, ao controlar políticas públicas, deve prioritariamente apontar as finalidades a serem alcançadas e determinar que a Administração apresente planos ou meios para atingi-las, preservando a discricionariedade do gestor para escolher os meios adequados.",
   },
@@ -426,7 +426,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "rejeitar a tese defensiva e prosseguir a execução, pois não houve revogação do tipo e do elemento subjetivo da culpa no ato de improbidade praticado por Fernando.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O STF, no julgamento das ADIs 7236, 7237 e 7238, fixou que a Lei 14.230/2021 não retroage para atingir atos de improbidade praticados antes de sua vigência quando há coisa julgada. A revogação da modalidade culposa é irretroativa em relação a processos já encerrados por sentença transitada em julgado.",
   },
@@ -444,7 +444,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "improcedente, pois a autoridade administrativa não dispõe de discricionariedade para aplicar ao servidor pena diversa de demissão quando caracterizadas as hipóteses legais dessa sanção.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 132, VI, da Lei 8.112/90 prevê demissão para insubordinação grave em serviço, sem margem de discricionariedade para substituição por pena menos grave quando a hipótese legal de demissão está configurada. Diferentemente das hipóteses do art. 130 (infrações que admitem substituição), a insubordinação grave é pena vinculada à demissão.",
   },
@@ -462,7 +462,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "indeferir a liminar, pois a contratação pretendida pelo Município é possível mediante dispensa de licitação, por expressa previsão legal, desde que instruída com os documentos indicados na legislação de regência.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 75, IV, da Lei 14.133/2021 prevê expressamente a dispensa de licitação para contratação com associações de catadores de materiais reutilizáveis e recicláveis, em consonância com o art. 36 da Lei 12.305/2010 (Política Nacional de Resíduos Sólidos). Preenchidos os requisitos legais, a contratação direta é legítima.",
   },
@@ -480,7 +480,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "improcedente, uma vez que, apesar da responsabilidade civil objetiva do Estado, incide a excludente da responsabilidade da culpa exclusiva de terceiro.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A responsabilidade do Estado é objetiva (art. 37, §6º, CF/88). Pedro não descumpriu nenhuma advertência e estava no exercício legítimo de sua profissão. Não há culpa exclusiva da vítima nem caso fortuito. O Estado responde objetivamente pelo dano causado por seus agentes, e a excludente de culpa exclusiva da vítima não se aplica ao caso.",
   },
@@ -501,7 +501,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "observar os sigilos legais decretados em processos judiciais, mas não lhe é exigido que evite comportamentos que impliquem a busca injustificada e desmesurada por reconhecimento social.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 11 do Código de Ética da Magistratura Nacional (Resolução CNJ 60/2008) estabelece que o magistrado deve abster-se de emitir juízo depreciativo sobre despachos, votos, sentenças ou acórdãos de órgãos judiciais, ressalvada a crítica nos autos, doutrinária ou no exercício do magistério.",
   },
@@ -519,7 +519,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I e II, apenas.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está correta: reproduz fielmente o art. 7º, XXXIII, da CF/88. II está incorreta: a Convenção 182 da OIT não fixa limite etário em 16 anos para piores formas — a proibição é absoluta para menores de 18 anos nas piores formas. III está incorreta: não há exceção que permita trabalho de menores de 14 anos. IV está incorreta: o ECA adota a doutrina da proteção integral e superou a doutrina da situação irregular.",
   },
@@ -537,7 +537,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Fortalecer as instituições nacionais relevantes, inclusive por meio da cooperação internacional, para a construção de capacidades em todos os níveis, em particular nos países em desenvolvimento.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A meta do ODS 16 fala em 'reduzir significativamente os fluxos financeiros e de armas ilegais' — e não em 'zerar' esses fluxos. Além disso, a referência a 'crimes hediondos' não consta da redação original da meta 16.4 da Agenda 2030. As demais alternativas reproduzem corretamente metas do ODS 16.",
   },
@@ -555,7 +555,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está incorreta: a responsabilidade da Lei Anticorrupção é objetiva (não subjetiva). II está correta: o art. 3º da Lei 12.846/2013 expressamente prevê que a responsabilização da pessoa jurídica não exclui a responsabilidade individual de seus dirigentes. III está incorreta: a lei abrange todas as esferas da Administração Pública federal, estadual, distrital e municipal. Apenas II está correta.",
   },
@@ -573,7 +573,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "o segredo profissional tem como fundamento salvaguardar a confiança no Judiciário e não especificamente os direitos das partes e das pessoas próximas perante o uso indevido de informações obtidas pelo juiz no desempenho das suas funções.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Os Princípios de Bangalore estabelecem que a independência judicial exige que o juiz mantenha independência em relação a atividades políticas partidárias. O Valor 1 (Independência) dos Princípios de Bangalore abrange tanto a independência institucional quanto a individual, incluindo a abstenção de participação política partidária.",
   },
@@ -591,7 +591,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "inconstitucional, por violar a reserva de lei complementar e a iniciativa da Suprema Corte para disciplinar matéria concernente ao Estatuto da Magistratura.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O Estatuto da Magistratura é matéria de lei complementar de iniciativa do STF (art. 93 e art. 93, II, da CF/88). A organização judiciária estadual não pode dispor sobre critérios de promoção por antiguidade em termos que extrapolam a LOMAN, pois tal matéria é reservada ao Estatuto da Magistratura. A norma viola tanto a reserva de lei complementar quanto a iniciativa exclusiva do STF.",
   },
@@ -612,7 +612,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A Corte IDH concluiu que o Estado não violou o direito à presunção de inocência ao exibir as vítimas aos meios de imprensa.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "No caso Valência Campos vs. Bolívia (2022), a Corte IDH fundamentou as restrições a operações de busca e apreensão domiciliar noturnas no direito à vida privada (art. 11 CADH) e nas obrigações de proteção à família (art. 17 CADH), reconhecendo que tais operações, quando realizadas à noite sem o devido cuidado, violam esses direitos.",
   },
@@ -630,7 +630,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "As Opiniões Consultivas da Corte IDH podem ser consideradas modalidade de exercício preventivo do controle de convencionalidade e são fontes standards que devem ser observados pelos Estados.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "As Opiniões Consultivas da Corte IDH são reconhecidas como mecanismo preventivo do controle de convencionalidade, pois estabelecem parâmetros interpretativos que os Estados devem observar em sua legislação e práticas internas. Elas constituem fonte de standards mínimos de proteção dos direitos humanos no sistema interamericano.",
   },
@@ -648,7 +648,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A relevância da transnacionalidade, como característica dos Direitos Humanos, possui especial aplicabilidade atualmente, dado o grande fluxo de refugiados.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A transnacionalidade é a característica dos Direitos Humanos que indica que eles transcendem as fronteiras nacionais e se aplicam a toda pessoa humana, independentemente de seu país de origem ou residência. Essa característica tem especial relevância no contexto atual de grandes fluxos migratórios e de refugiados, pois os direitos não se perdem com o deslocamento.",
   },
@@ -666,7 +666,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Todas as assertivas estão corretas. I: a Corte IDH consolidou que o desaparecimento forçado é crime permanente, prolongando-se enquanto não se esclarece o paradeiro da vítima. II: a proibição é norma de jus cogens. III: a Corte IDH reconhece o direito à verdade dos familiares com fundamento nos arts. 8, 25 e 13 da CADH (caso Velásquez Rodriguez e posteriores).",
   },
@@ -684,7 +684,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A Declaração Americana de Direitos e Deveres do Homem foi inspirada na Declaração Universal dos Direitos Humanos, editada poucos meses antes pela Organização das Nações Unidas.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A Carta da OEA contém referências genéricas aos direitos humanos, enquanto a Declaração Americana (aprovada na mesma conferência de Bogotá, em 1948) é tida como a interpretação autêntica e detalhada desses dispositivos genéricos. Ambas foram adotadas na mesma conferência. A Declaração Americana antecedeu a Declaração Universal da ONU por alguns meses.",
   },
@@ -702,7 +702,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Diversamente do que se verifica em relação ao controle de constitucionalidade, comumente atribuído pelas cartas constitucionais a todos os poderes, no plano nacional, o controle de convencionalidade somente é imputado ao Poder Judiciário.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A teoria do duplo controle (ou dupla compatibilidade vertical) preconiza que as normas jurídicas devem ser compatíveis tanto com a Constituição (controle de constitucionalidade) quanto com os tratados internacionais de direitos humanos incorporados pelo Estado (controle de convencionalidade). Trata-se de construção doutrinária reconhecida pela Corte IDH e por autores como Valério Mazzuoli.",
   },
@@ -723,7 +723,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Concedida a segurança, para o fim de assegurar ao impetrante o recebimento de vantagens pecuniárias, não lhe será lícito deduzir pretensão de execução por quantia certa em sede de cumprimento de sentença.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 14, §4º, da Lei 12.016/2009 veda expressamente o pagamento de vantagens pecuniárias vencidas antes da impetração em cumprimento de sentença de mandado de segurança. Ademais, a natureza mandamental do MS não comporta execução por quantia certa para vantagens pecuniárias passadas, que devem ser cobradas em ação própria.",
   },
@@ -741,7 +741,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "não está configurada a conexão nem a continência entre as ações populares, devendo os feitos tramitar separadamente.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "As ações populares têm o mesmo objeto (o mesmo contrato) e partes que se identificam (o mesmo réu – ente público). A continência ocorre quando há identidade de partes e de causa de pedir, mas o objeto de uma demanda é mais amplo e abrange o da outra (art. 56 CPC). Configurada a continência, a reunião se dá no juízo prevento — que é determinado pela citação. Bruno obteve citações mais antigas (18 e 21/03) do que André (25 e 28/03), logo Bruno preveniu a competência.",
   },
@@ -759,7 +759,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "não será lícito ao advogado valer-se de ação autônoma para cobrar o respectivo valor, transitando em julgado decisão que tenha sido omissa quanto ao direito aos honorários.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 85, §10, do CPC veda expressamente a compensação de honorários advocatícios. Advogados públicos podem perceber honorários (art. 85, §19, CPC). O art. 85, §10 do CPC proíbe a compensação. O art. 85, §18 do CPC permite honorários ao advogado em causa própria. Quanto à perda superveniente do interesse de agir (como na desistência ou perda do objeto), a responsabilidade pelos honorários recai sobre quem deu causa ao processo — art. 85, §10 do CPC e art. 485, §1º do CPC.",
   },
@@ -777,7 +777,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "O juiz errou ao determinar a intimação do advogado da autora para que providenciasse o recolhimento das custas processuais e taxa judiciária, já que o destinatário desse ato intimatório deve ser a própria parte.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O juiz agiu corretamente ao cancelar a distribuição ante o não recolhimento das custas (art. 290 CPC). A decisão de cancelamento da distribuição é uma sentença terminativa, impugnável por recurso de apelação (art. 1.009 CPC), e não por agravo de instrumento.",
   },
@@ -795,7 +795,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "assinar prazo para que o autor emende a petição inicial, adequando-a à pretensão de execução por quantia certa.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O autor tem a liberdade de escolher o procedimento que melhor lhe convém, inclusive optando pela ação de conhecimento em vez da execução, mesmo tendo título executivo extrajudicial. O juiz não pode converter de ofício o procedimento nem indeferir a inicial por falta de interesse de agir. Deve admitir a demanda e ordenar a citação do réu.",
   },
@@ -813,7 +813,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "proceder ao juízo positivo de admissibilidade da ação, só lhe sendo lícito determinar que a autora inclua no polo passivo a sociedade empresária B se o ente público suscitar a questão, haja vista a configuração do litisconsórcio passivo facultativo.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A sociedade B, como vencedora da licitação e adjudicatária do contrato, é parte cujo interesse é diretamente afetado pelo desfecho da demanda. Configura-se litisconsórcio necessário (art. 114 CPC), pois a sentença de procedência pode afetar diretamente a esfera jurídica da empresa B. O juiz não pode incluir de ofício partes (art. 115, parágrafo único, CPC), mas deve intimar a autora para emendar a inicial.",
   },
@@ -830,7 +830,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Cabe agravo de instrumento contra o pronunciamento jurisdicional que acolhe ou rejeita os embargos monitórios.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 700 do CPC prevê que a ação monitória pode ter por objeto o pagamento de quantia em dinheiro, a entrega de coisa fungível ou infungível ou de bem móvel ou imóvel, e o adimplemento de obrigação de fazer ou de não fazer. Portanto, é cabível para obrigação de fazer. A Fazenda Pública pode ser ré em monitória (Súmula 339 STJ revogada; art. 701 CPC admite); a citação por edital é cabível; o prazo é de 15 dias; e os embargos monitórios são julgados por sentença, recorrível por apelação.",
   },
@@ -848,7 +848,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "merecem ser conhecidos e providos, para o fim de se apreciar e deferir o requerimento de tutela provisória.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O prazo para embargos de declaração é de 5 dias úteis para o MP (art. 1.023 c/c art. 183 do CPC — o dobro do prazo comum de 5 dias = 10 dias, mas o prazo dos embargos é fixo em 5 dias para qualquer parte, sem dobro). Contudo, o art. 180 CPC confere ao MP prazo em dobro, logo o MP tem 10 dias úteis. O MP interpôs os embargos em 7 dias úteis, portanto tempestivamente. A omissão quanto à tutela provisória requerida e não apreciada configura vício de omissão, devendo os embargos ser providos.",
   },
@@ -866,7 +866,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Instaurado o incidente, o sócio será citado para manifestar-se e requerer as provas cabíveis no prazo de 15 (quinze) dias.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 135 do CPC estabelece que instaurado o incidente de desconsideração da personalidade jurídica, o sócio ou a pessoa jurídica será citado para manifestar-se e requerer as provas cabíveis no prazo de 15 dias. As demais assertivas estão incorretas: o incidente é cabível em qualquer fase processual (art. 134 CPC); há suspensão do processo (art. 134, §3º); é resolvido por decisão interlocutória atacável por agravo; e o juiz não pode instaurar de ofício.",
   },
@@ -884,7 +884,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A ausência de contestação do pedido não induz à presunção de veracidade dos fatos alegados pela autora.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 308, caput, do CPC dispõe que, dentro do prazo de 30 dias da efetivação da tutela cautelar, o pedido principal deve ser formulado nos mesmos autos, sem necessidade de novas custas processuais. O prazo começa da última efetivação — o 2º automóvel foi sequestrado em 20/09/2023, e o pedido principal foi formulado em 25/09/2023, dentro do prazo de 30 dias.",
   },
@@ -902,7 +902,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "declinar a competência em favor de um dos Juízos Cíveis da Comarca do Rio de Janeiro-RJ, que é o juízo competente.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 47 do CPC estabelece que as ações fundadas em direito real sobre imóveis devem ser propostas no foro de situação da coisa (foro real). Trata-se de competência absoluta, que pode e deve ser reconhecida de ofício pelo juiz a qualquer tempo. O imóvel está em Saquarema, portanto o juiz de Maricá deve declinar de ofício.",
   },
@@ -920,7 +920,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A posição do comprador será a de assistente simples, e ainda que o autor concorde, o juiz não pode deferir a sucessão de réu depois da citação.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 109 do CPC trata da alienação da coisa ou do direito litigioso. O §1º prevê que o adquirente ou cessionário não poderá ingressar em juízo, salvo se o alienante concordar e a parte contrária (Sócrates) também concordar. Se Sócrates recusar, Heráclito não entra, mas a sentença lhe será oponível (art. 109, §3º), pois assumiu a coisa litigiosa ciente do processo.",
   },
@@ -941,7 +941,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Felipe, Renata e Valter.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Felipe (16 anos, casado): o casamento é causa de emancipação (art. 5º, parágrafo único, II, CC). Renata (17 anos, servidora pública efetiva): o emprego público é causa de emancipação (art. 5º, parágrafo único, III, CC). Valter (83 anos): plenamente capaz, pois a idade avançada, por si só, não implica incapacidade. Todos os três estão emancipados ou são plenamente capazes.",
   },
@@ -959,7 +959,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "O crédito decorrente do IPTU prefere ao crédito condominial e este, ao hipotecário.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O STJ firmou, em sede de recurso repetitivo (REsp 1.914.045), que o crédito condominial (obrigação propter rem) prefere ao IPTU, que por sua vez prefere ao crédito hipotecário. A lógica é que as contribuições condominiais estão intimamente ligadas à conservação do bem e garantem sua própria existência, e os créditos tributários têm preferência sobre créditos privados (hipoteca).",
   },
@@ -977,7 +977,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "não acolher o pleito, visto que não houve autorização judicial para a tomada de decisão apoiada.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Na tomada de decisão apoiada (art. 1.783-A do CC), a decisão final é sempre de Mário (o apoiado), que pode decidir mesmo contra a opinião de um dos apoiadores. A unanimidade dos apoiadores não é exigida. O papel dos apoiadores é auxiliar, não vetar. Assim, a decisão de Mário de acolher o conselho de Rita deve ser respeitada, não cabendo ao juiz substituir sua vontade.",
   },
@@ -995,7 +995,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "não precisará adotar qualquer providência, pois o contrato foi extinto de pleno direito quando a CLNG descumpriu a obrigação.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A força maior (indisponibilidade de andaimes por fato alheio à CLNG) suspende a exigibilidade da obrigação enquanto durar o impedimento (art. 393 CC). O inadimplemento não configura descumprimento culposo quando decorrente de força maior ou caso fortuito. Assim, a cláusula resolutiva expressa não pode ser acionada pela ARKT enquanto persistir a causa de força maior, pois não há inadimplemento juridicamente relevante.",
   },
@@ -1013,7 +1013,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Se os ramos da árvore, cujo tronco está situado no terreno de Frederico, atravessarem o plano vertical divisório e entrarem no terreno de Guilherme, este precisará de prévia autorização judicial para cortá-los.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 1.282 do CC estabelece que a árvore cujo tronco estiver na linha divisória presume-se pertencer em comum aos donos dos prédios confinantes. Logo, configura-se condomínio presumido entre Frederico e Guilherme. As demais assertivas estão incorretas: sementes furtadas não geram perda do imóvel (A); frutos caídos em terreno alheio pertencem ao dono do terreno (B); plantar de boa-fé em terreno alheio gera direito a ressarcimento (C); ramos podem ser cortados sem autorização judicial (E).",
   },
@@ -1025,7 +1025,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Cecília, 30 anos, e Edgar, 35 anos, celebraram pacto antenupcial para adotar o regime da participação final nos aquestos. Antes da chegada do mês da celebração do casamento, houve uma briga e o casal decidiu romper por diferenças irreconciliáveis. Nesse caso, o pacto antenupcial deve ser considerado",
     opcoes: ["nulo.", "ineficaz.", "anulável.", "revogado.", "inexistente."],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O pacto antenupcial é negócio jurídico válido (preenche os requisitos de validade), mas sua eficácia está condicionada à realização do casamento (art. 1.653 CC). Não ocorrendo o casamento, o pacto não produz efeitos — é ineficaz, mas não inválido (nulo ou anulável). Trata-se de ineficácia por não implemento da condição suspensiva implícita.",
   },
@@ -1043,7 +1043,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Permanece exigível, pois o casamento de Ana é motivo de suspensão da prescrição.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 197, I, do CC estabelece que não corre a prescrição entre cônjuges na constância da sociedade conjugal. Quando Carlos se casou com Ana (credora), o prazo prescricional ficou suspenso em relação a ela (e aos cocredores, por solidariedade). Após o divórcio, a prescrição retoma seu curso. Como o prazo de 5 anos estipulado contratualmente é superior ao prazo legal de 3 anos (art. 206, §3º, I, CC — aluguel), e houve suspensão pelo casamento, a pretensão de Jorge permanece exigível.",
   },
@@ -1061,7 +1061,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "nada quitou, pois o valor não foi integral.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 354 do CC estabelece que, havendo capital e juros, o pagamento imputar-se-á primeiro nos juros vencidos e depois no capital. Quanto a duas dívidas, se o devedor não fizer a indicação e o credor não se opuser, aplica-se o art. 355 do CC: presume-se o pagamento imputado à dívida mais onerosa. Como as dívidas têm juros diferentes (0,5% no primeiro mês e 1% nos subsequentes), a mais onerosa é a mais antiga (que já acumula o 1% de juros).",
   },
@@ -1079,7 +1079,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "deverá devolver o imóvel e receber metade do valor gasto na construção.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 1.255, parágrafo único, do CC prevê que, se a construção ou plantação exceder consideravelmente o valor do terreno, aquele que, de boa-fé, plantou ou construiu adquirirá a propriedade do solo, mediante pagamento da indenização fixada judicialmente, se não houver acordo. Como o investimento é três vezes superior ao valor do lote, Artur tem direito à aquisição forçada do lote 6, com indenização a ser fixada judicialmente.",
   },
@@ -1091,7 +1091,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Considerando as disposições do Estatuto da Pessoa Idosa e do ECA, analise: I. Em todo atendimento de saúde, os maiores de 80 anos terão preferência especial sobre as demais pessoas idosas, exceto em caso de emergência. II. O reconhecimento do estado de filiação é direito personalíssimo, indisponível e imprescritível, podendo ser exercitado contra os pais ou seus herdeiros, sem qualquer restrição, observado o segredo de Justiça. III. É vedada a adoção por procuração, ressalvadas situações especiais em nome do melhor interesse da criança. Está correto apenas o que se afirma em",
     opcoes: ["I.", "II.", "III.", "I e II.", "II e III."],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está incorreta: o Estatuto do Idoso prevê preferência para maiores de 80 anos inclusive em caso de emergência (Lei 10.741/2003, art. 15, §7º). II está correta: art. 27 do ECA — direito personalíssimo, indisponível e imprescritível. III está incorreta: a adoção por procuração é vedada de forma absoluta pelo art. 39, §2º, do ECA, sem qualquer ressalva.",
   },
@@ -1112,7 +1112,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Gustavo deverá receber metade da quantia, por ter executado a tarefa primeiro, e Marcelo e Caio devem dividir a outra metade.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 857 do CC dispõe que, se a promessa foi feita sem indicação de prazo, e mais de uma pessoa realizar a tarefa no prazo indicado, somente aquele que primeiro a executou terá direito à recompensa. Gustavo foi o primeiro a executar a tarefa (5º dia), portanto tem direito exclusivo aos R$1.000,00.",
   },
@@ -1130,7 +1130,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está correta: no sistema brasileiro, o contrato de compra e venda não transfere a propriedade imóvel — apenas gera obrigação; a transferência ocorre pelo registro (art. 1.245 CC). II está incorreta: o registro presume a propriedade relativa (iuris tantum), não absoluta (iuris et de iure); e depende de negócio jurídico válido. III está incorreta: na usucapião, a aquisição é originária, sem sucessão ao proprietário anterior — é exatamente o oposto de aquisição indireta.",
   },
@@ -1151,7 +1151,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está correta: art. 1.008 CC — é nula a estipulação, mas não o contrato (nulidade parcial). II está correta: art. 1.007 CC — o contrato pode estabelecer proporção diferente das quotas. III está correta: art. 1.007, parágrafo único, CC — o sócio de serviços participa dos lucros na proporção do sócio de menor participação no capital, salvo estipulação contratual diversa. Todas as assertivas estão corretas.",
   },
@@ -1169,7 +1169,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Todas as assertivas estão corretas: I – art. 74 da LC 123/2006; II – art. 74, caput, da LC 123/2006 (ME e EPP podem propor ação no JEC como autoras, vedada apenas a participação como rés no JEC federal); III – art. 75 da LC 123/2006.",
   },
@@ -1187,7 +1187,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Helena não poderá exercer atividade empresária de forma independente, mas poderá exercê-la, desde que devidamente assistida por seus representantes legais.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A emancipação confere plena capacidade civil (art. 5º, parágrafo único, CC). Helena foi emancipada ao completar 16 anos, portanto está em pleno gozo da capacidade civil e pode exercer atividade empresária de forma independente, sem necessidade de assistência ou autorização.",
   },
@@ -1205,7 +1205,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I e III, apenas.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Nos termos do art. 1.028 e 1.033 do CC, o falecimento de um sócio não implica necessariamente a dissolução total da sociedade. O contrato social pode prever a continuidade com os herdeiros, ou o sócio sobrevivente pode continuar a exploração individual temporariamente (EIRELI/SLU) até regularização. I e II estão incorretas por afirmarem que a dissolução seria 'obrigatória'.",
   },
@@ -1223,7 +1223,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A desconsideração da personalidade jurídica poderá ser decretada caso fique caracterizada a ausência de separação de fato entre o patrimônio das sociedades e o de seus sócios.",
     ],
     gabarito: "E",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 50 do CC e o art. 82-A da Lei 11.101/2005 estabelecem que a desconsideração da personalidade jurídica exige o desvio de finalidade ou a confusão patrimonial (ausência de separação de fato entre o patrimônio da sociedade e o dos sócios). A mera existência de grupo econômico, inconsistências contábeis ou a própria falência, por si sós, não bastam.",
   },
@@ -1241,7 +1241,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O STJ (REsp 2.130.619 e outros) firmou entendimento de que o simples vazamento de dados pessoais, por si só, não configura dano moral in re ipsa (presumido). É necessária a prova efetiva do dano. O titular dos dados deve demonstrar o prejuízo concreto sofrido. II está incorreta pois inverte o ônus: o dano não é presumido. III está incorreta pois não é qualquer tipo de dado — há nuances sobre a natureza dos dados vazados.",
   },
@@ -1262,7 +1262,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A aplicação da lei penal brasileira ao fato independe de qualquer condição, por se tratar de crime praticado mediante violência.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 7º, II, 'b', do CP prevê extraterritorialidade condicionada para crimes praticados por estrangeiro contra brasileiro no exterior. As condições do art. 7º, §2º: entrar no Brasil (✓), ser o fato punível no país onde foi praticado (✓), e o MP ter iniciado a persecução (✓ — não há exigência de representação para o delito de estupro após a Lei 13.718/2018, que tornou a ação penal pública incondicionada). Todos os requisitos estão preenchidos.",
   },
@@ -1280,7 +1280,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Vladimir foi definitivamente condenado na Espanha, por tráfico de drogas, a uma pena de 6 anos de reclusão, em 2017; porém, ainda não cumpriu a pena porque se evadiu para o Brasil.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Rogério é tecnicamente primário pois, embora tenha sido condenado, o reconhecimento da prescrição da pretensão punitiva retroativa extingue a punibilidade antes mesmo do trânsito em julgado definitivo, como se a condenação não existisse para fins de reincidência. Guilherme (A): condenação anterior com pena cumprida em 2023 = reincidente em 2024. Américo (B): condenação anterior = reincidente. Lucas (C): reabilitação não apaga a reincidência em nova infração; o prazo da reabilitação não superou 5 anos. Vladimir (D): condenação no estrangeiro gera reincidência (art. 63 CP).",
   },
@@ -1298,7 +1298,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Apropriação de coisa havida por erro.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "No furto mediante fraude (art. 155, §4º, II, CP), o agente usa artifício ou ardil para obter a posse temporária da coisa e, em seguida, dela se apodera definitivamente. A vítima entrega o bem, mas sua vontade é viciada pela fraude (pensava que o carro seria devolvido). Diferencia-se do estelionato porque no furto a vítima não é induzida a se despir definitivamente do bem — é enganada para entregar temporariamente.",
   },
@@ -1316,7 +1316,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II e III.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está correta: conforme art. 327, §1º, do CP, equipara-se a funcionário público quem exerce cargo, emprego ou função em entidade paraestatal ou em empresa prestadora de serviço contratada ou conveniada para a execução de atividade típica da Administração Pública. II está correta: o médico do SUS é equiparado a funcionário público para fins penais. III está incorreta: a vinculação com ato de ofício também é elemento do tipo da corrupção passiva (art. 317 CP).",
   },
@@ -1334,7 +1334,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "pode ser aplicada a Bernardo a legislação penal brasileira, pois, embora o crime tenha ocorrido no estrangeiro, trata-se de hipótese de extraterritorialidade condicionada da lei penal brasileira, à luz do princípio da representação.",
     ],
     gabarito: "B",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 5º, §1º, do CP estabelece que o território nacional abrange embarcações e aeronaves brasileiras, de natureza pública ou a serviço do governo brasileiro onde quer que se encontrem. Navios da marinha mercante brasileira em alto-mar são considerados território nacional por extensão (princípio da territorialidade flutuante). Logo, aplica-se a lei penal brasileira sem necessidade de extraterritorialidade.",
   },
@@ -1352,7 +1352,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "I, II, III e IV.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "I está incorreta: não existe regra geral no CP determinando que o período de suspensão seja regulado pelo máximo da pena cominada. II está correta: art. 51 do CP após a alteração pela Lei 9.268/1996 e STF (AP 470). III está correta: art. 119 do CP — no concurso de crimes, a extinção da punibilidade incide sobre a pena de cada um, isoladamente, sendo que no crime continuado a prescrição é calculada sem o acréscimo. IV está correta: nova sistemática da prescrição da pretensão executória após o julgamento do STF no HC 184.267 (marco temporal = trânsito para ambas as partes).",
   },
@@ -1370,7 +1370,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "A prescrição da pretensão punitiva começa a correr na data da entrega da vantagem, ainda que seja constatada a oferta ou a promessa do mesmo benefício em momento anterior.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A alternativa D está incorreta: a causa de aumento de pena da corrupção ativa em transação internacional (art. 337-C do CP) incide quando o agente ocupa cargo, emprego ou função na Administração Pública brasileira — não do país estrangeiro. A questão pede a alternativa incorreta, sendo D a resposta.",
   },
@@ -1388,7 +1388,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "favorecimento da prostituição ou de outra forma de exploração de criança ou adolescente ou de vulnerável.",
     ],
     gabarito: "D",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O art. 218-A do CP tipifica o crime de satisfação de lascívia mediante presença de criança ou adolescente: 'Praticar, na presença de alguém menor de 14 (catorze) anos, ou induzi-lo a presenciar, conjunção carnal ou outro ato libidinoso, a fim de satisfazer lascívia própria ou de outrem.' A vizinha tem 13 anos, Caio praticou ato libidinoso na sua presença e pagou para que ela assistisse, configurando exatamente esse tipo penal.",
   },
@@ -1406,7 +1406,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "apropriação indébita qualificada.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Alberto praticou furto qualificado pelo emprego de destreza (art. 155, §4º, II, CP). A destreza consiste na habilidade especial do agente que subtrai a coisa sem que a vítima perceba — exatamente o que ocorreu ao substituir o relógio com ligeireza de mágico. Não é estelionato pois não houve engano que levou a vítima a voluntariamente entregar definitivamente o bem de valor.",
   },
@@ -1424,7 +1424,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Crime de falsidade ideológica.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "O STJ (Súmula 522) e o STF consolidaram que o crime de falsa identidade (art. 307 CP) é configurado quando o agente, para ocultar antecedentes criminais e se beneficiar no processo, atribui a si identidade falsa. Não se aplica o princípio da autodefesa nessa hipótese, pois o bem jurídico tutelado é a fé pública, e não apenas o interesse individual do acusado.",
   },
@@ -1442,7 +1442,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "agravada, preponderando a agravante da reincidência, sem qualquer compensação em relação à atenuante da confissão espontânea.",
     ],
     gabarito: "C",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "Analisando a reincidência: a condenação I transitou em 2016, pena extinta em 15/03/2022. O crime atual ocorreu em 04/03/2023 — dentro dos 5 anos do art. 64, I, do CP (contados da extinção da pena). Logo, há reincidência pela condenação I. Presente a agravante da reincidência e a atenuante da confissão espontânea, o STJ firmou (Súmula 545) que se compensam reciprocamente — a pena é mantida no mesmo patamar.",
   },
@@ -1460,7 +1460,7 @@ export const BANCO_QUESTOES: Questao[] = [
       "Injúria qualificada por preconceito religioso.",
     ],
     gabarito: "A",
-    fonte: "ENAM 2024",
+    fonte: "ENAM 2024/1",
     comentario:
       "A Lei Antiterrorismo (Lei 13.260/2016) tipifica terrorismo como atos que, por razões de xenofobia, discriminação ou preconceito de raça, cor, etnia e religião, causem terror social ou generalizado, expondo a perigo pessoa, patrimônio, a paz pública ou a incolumidade pública. Alfredo agiu movido por intolerância religiosa, visando gerar medo generalizado nos fiéis, colocando explosivo em local de culto. O crime se consuma com a prática dos atos, independentemente da explosão efetiva.",
   },

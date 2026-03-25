@@ -1,9 +1,14 @@
 import { prisma } from "@/lib/prisma";
-import { BANCO_SUMULAS, type Sumula } from "@/lib/data/sumulas";
+import {
+  BANCO_SUMULAS,
+  type Sumula,
+  type SumulaTST,
+} from "@/lib/data/sumulas";
 import { BANCO_SUMULAS_STJ } from "@/lib/data/sumulasSTJ";
+import { BANCO_SUMULAS_TST } from "@/lib/data/sumulasTST";
 
 type ListFilters = {
-  tribunal?: "STF" | "STJ";
+  tribunal?: "STF" | "STJ" | "TST";
 };
 
 function mapRowStf(
@@ -33,28 +38,94 @@ function mapRowStf(
   };
 }
 
+function mapRowStj(
+  r: {
+    id: number;
+    titulo: string;
+    descricao: string;
+    secao: string;
+    julgadoEm: string;
+    djeDe: string;
+  },
+  fallback?: Sumula,
+): Sumula {
+  const secaoDb = r.secao?.trim();
+  return {
+    id: r.id,
+    tribunal: "STJ",
+    titulo: r.titulo,
+    descricao: r.descricao,
+    secao:
+      secaoDb && secaoDb !== "Não informado" ? secaoDb : fallback?.secao,
+    dataAprovacao:
+      r.julgadoEm?.trim() || fallback?.dataAprovacao || "Não informado",
+    fontePublicacao:
+      r.djeDe?.trim() || fallback?.fontePublicacao || "Não informado",
+    referenciaLegislativa: fallback?.referenciaLegislativa ?? "Não informado",
+    precedentes: fallback?.precedentes ?? "Não informado",
+    observacao: fallback?.observacao ?? "Não informado",
+  };
+}
+
+function mapRowTst(
+  r: {
+    id: number;
+    titulo: string;
+    subtitulo: string;
+    descricao: string;
+  },
+  fallback?: SumulaTST,
+): Sumula {
+  const sub = r.subtitulo?.trim();
+  return {
+    id: r.id,
+    titulo: r.titulo,
+    subtitulo: sub || fallback?.subtitulo,
+    descricao: r.descricao,
+  };
+}
+
 export async function listSumulas(filters: ListFilters): Promise<Sumula[]> {
   try {
-    if (filters.tribunal === "STJ") {
-      return [...BANCO_SUMULAS_STJ];
-    }
-
-    const rows = await prisma.sumulasSTF.findMany({
+    const rowsStf = await prisma.sumulasSTF.findMany({
       orderBy: { id: "asc" },
     });
-
-    const stf = rows.map((r) => {
+    const stf = rowsStf.map((r) => {
       const fallback = BANCO_SUMULAS.find((s) => s.id === r.id && s.tribunal === "STF");
       return mapRowStf(r, fallback);
+    });
+
+    const rowsStj = await prisma.sumulasSTJ.findMany({
+      orderBy: { id: "asc" },
+    });
+    const stj = rowsStj.map((r) => {
+      const fallback = BANCO_SUMULAS_STJ.find((s) => s.id === r.id);
+      return mapRowStj(r, fallback);
+    });
+
+    const rowsTst = await prisma.sumulasTST.findMany({
+      orderBy: { id: "asc" },
+    });
+    const tst = rowsTst.map((r) => {
+      const fallback = BANCO_SUMULAS_TST.find((s) => s.id === r.id);
+      return mapRowTst(r, fallback);
     });
 
     if (filters.tribunal === "STF") {
       return stf;
     }
+    if (filters.tribunal === "STJ") {
+      return stj;
+    }
+    if (filters.tribunal === "TST") {
+      return tst;
+    }
 
-    // sem filtro: STF (banco) + STJ (estático)
-    return [...stf, ...BANCO_SUMULAS_STJ];
+    return [...stf, ...stj, ...tst];
   } catch {
+    if (filters.tribunal === "TST") {
+      return [...BANCO_SUMULAS_TST];
+    }
     let lista = [...BANCO_SUMULAS];
     if (filters.tribunal) {
       lista = lista.filter((s) => s.tribunal === filters.tribunal);

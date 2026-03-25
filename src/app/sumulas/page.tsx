@@ -1,7 +1,11 @@
 "use client";
 
+import { Scale } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { BANCO_SUMULAS, type Sumula } from "@/lib/data/sumulas";
+import {
+  BANCO_SUMULAS,
+  type Sumula,
+} from "@/lib/data/sumulas";
 
 function normalizeForSearch(s: string): string {
   return s
@@ -18,9 +22,13 @@ function sumulaMatchesQuery(s: Sumula, raw: string): boolean {
   const hay = normalizeForSearch(
     [
       s.titulo,
+      s.subtitulo,
       s.descricao,
+      s.secao,
       s.dataAprovacao,
       s.fontePublicacao,
+      s.julgadoEm,
+      s.djeDe,
       s.referenciaLegislativa,
       s.precedentes,
       s.observacao,
@@ -48,8 +56,54 @@ function sumulaMatchesQuery(s: Sumula, raw: string): boolean {
   });
 }
 
+type MetaRow = { label: string; value?: string | null; pre?: boolean };
+
+function SumulaMetaRow({
+  label,
+  value,
+  pre,
+}: {
+  label: string;
+  value?: string | null;
+  pre?: boolean;
+}) {
+  const v = value?.trim();
+  if (!v) return null;
+  return (
+    <div className="sumula-card__meta-group">
+      <dt className="sumula-card__meta-label">{label}</dt>
+      <dd
+        className={
+          pre
+            ? "sumula-card__meta-value sumula-card__meta-value--pre"
+            : "sumula-card__meta-value"
+        }
+      >
+        {v}
+      </dd>
+    </div>
+  );
+}
+
+function SumulaMeta({ rows }: { rows: MetaRow[] }) {
+  const visible = rows.filter((r) => r.value?.trim());
+  if (!visible.length) return null;
+  return (
+    <dl className="sumula-card__meta">
+      {visible.map((r) => (
+        <SumulaMetaRow
+          key={r.label}
+          label={r.label}
+          value={r.value}
+          pre={r.pre}
+        />
+      ))}
+    </dl>
+  );
+}
+
 export default function SumulasPage() {
-  const [tribunal, setTribunal] = useState<"STF" | "STJ">("STF");
+  const [tribunal, setTribunal] = useState<"STF" | "STJ" | "TST">("STF");
   const [sumulas, setSumulas] = useState<Sumula[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -101,11 +155,14 @@ export default function SumulasPage() {
             <select
               id="filter-tribunal"
               value={tribunal}
-              onChange={(e) => setTribunal(e.target.value as Sumula["tribunal"])}
+              onChange={(e) =>
+                setTribunal(e.target.value as "STF" | "STJ" | "TST")
+              }
               aria-label="Filtro de tribunal"
             >
               <option value="STF">STF</option>
               <option value="STJ">STJ</option>
+              <option value="TST">TST</option>
             </select>
           </div>
           <div className="filter-group filter-group--sumulas-search">
@@ -126,54 +183,69 @@ export default function SumulasPage() {
         </div>
       </div>
 
-      <div style={{ display: "grid", gap: "1rem" }}>
+      <div className="sumula-list">
         {filteredSumulas.map((s) => (
-          <div key={s.id} className="stat-card">
-            <div className="label">
-              {s.tribunal} · {s.titulo}
-            </div>
-            <div style={{ color: "var(--dark-2)", fontSize: ".95rem" }}>
-              {s.descricao}
-            </div>
-            <div
-              style={{
-                display: "grid",
-                gap: ".4rem",
-                marginTop: ".85rem",
-                color: "var(--mid)",
-                fontSize: ".88rem",
-              }}
-            >
-              <div>
-                <strong>Data de aprovação:</strong> {s.dataAprovacao}
+          <article
+            key={s.id}
+            className={`stat-card sumula-card sumula-card--${tribunal.toLowerCase()} group`}
+          >
+            <div className="sumula-card__header">
+              <div className="sumula-card__icon" aria-hidden>
+                <Scale className="h-[1.15rem] w-[1.15rem]" strokeWidth={2} />
               </div>
-              <div>
-                <strong>Fonte de publicação:</strong> {s.fontePublicacao}
-              </div>
-              <div>
-                <strong>Referência legislativa:</strong> {s.referenciaLegislativa}
-              </div>
-              <div>
-                <strong>Precedentes:</strong> {s.precedentes}
-              </div>
-              <div>
-                <strong>Observação:</strong> {s.observacao}
+              <div className="sumula-card__head-text">
+                <span className="sumula-card__tribunal">{tribunal}</span>
+                <h2 className="sumula-card__title">{s.titulo}</h2>
               </div>
             </div>
-          </div>
+            {s.subtitulo?.trim() ? (
+              <p className="sumula-card__subtitle">{s.subtitulo}</p>
+            ) : null}
+            <p className="sumula-card__ementa">{s.descricao}</p>
+            {tribunal === "STF" ? (
+              <SumulaMeta
+                rows={[
+                  { label: "Seção", value: s.secao },
+                  { label: "Data de aprovação", value: s.dataAprovacao },
+                  { label: "Fonte de publicação", value: s.fontePublicacao },
+                  { label: "Referência legislativa", value: s.referenciaLegislativa },
+                  { label: "Precedentes", value: s.precedentes, pre: true },
+                  { label: "Observação", value: s.observacao },
+                ]}
+              />
+            ) : tribunal === "STJ" ? (
+              <SumulaMeta
+                rows={[
+                  { label: "Seção", value: s.secao },
+                  {
+                    label: "Julgado em",
+                    value: s.julgadoEm ?? s.dataAprovacao,
+                  },
+                  {
+                    label: "DJE de",
+                    value: s.djeDe ?? s.fontePublicacao,
+                  },
+                ]}
+              />
+            ) : null}
+          </article>
         ))}
         {sumulas.length === 0 ? (
-          <div className="stat-card">
-            <div style={{ color: "var(--mid)" }}>
+          <div
+            className={`stat-card sumula-card sumula-card--${tribunal.toLowerCase()} sumula-card--empty`}
+          >
+            <p className="sumula-card__empty-msg">
               Nenhuma súmula cadastrada para {tribunal}.
-            </div>
+            </p>
           </div>
         ) : filteredSumulas.length === 0 ? (
-          <div className="stat-card">
-            <div style={{ color: "var(--mid)" }}>
-              Nenhuma súmula corresponde à busca. Tente outras palavras ou limpe o
-              campo.
-            </div>
+          <div
+            className={`stat-card sumula-card sumula-card--${tribunal.toLowerCase()} sumula-card--empty`}
+          >
+            <p className="sumula-card__empty-msg">
+              Nenhuma súmula corresponde à busca. Tente outras palavras ou limpe
+              o campo.
+            </p>
           </div>
         ) : null}
       </div>

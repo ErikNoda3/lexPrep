@@ -3,7 +3,7 @@ import { z } from "zod";
 import { listSumulas } from "@/lib/sumulas-repo";
 
 const QuerySchema = z.object({
-  tribunal: z.enum(["STF", "STJ"]).optional(),
+  tribunal: z.enum(["STF", "STJ", "TST"]).optional(),
 });
 
 export async function GET(req: Request) {

@@ -1,8 +1,9 @@
 import { PrismaClient } from "@/generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { BANCO_QUESTOES } from "@/lib/data/questions";
-import { RESUMOS } from "@/lib/data/resumos";
 import { BANCO_SUMULAS_STF } from "@/lib/data/sumulasSTF";
+import { BANCO_SUMULAS_STJ } from "@/lib/data/sumulasSTJ";
+import { BANCO_SUMULAS_TST } from "@/lib/data/sumulasTST";
 
 const prisma = new PrismaClient({
   adapter: new PrismaPg({
@@ -33,18 +34,6 @@ async function main() {
     });
   }
 
-  const resumoEntries = Object.values(RESUMOS);
-  if (resumoEntries.length > 0) {
-    await prisma.resumo.createMany({
-      data: resumoEntries.map((r) => ({
-        chave: r.chave,
-        titulo: r.titulo,
-        html: r.html,
-      })),
-      skipDuplicates: true,
-    });
-  }
-
   await prisma.sumulasSTF.deleteMany();
   if (BANCO_SUMULAS_STF.length > 0) {
     await prisma.sumulasSTF.createMany({
@@ -57,6 +46,34 @@ async function main() {
         referenciaLegislativa: s.referenciaLegislativa,
         precedentes: s.precedentes,
         observacao: s.observacao,
+      })),
+      skipDuplicates: false,
+    });
+  }
+
+  await prisma.sumulasSTJ.deleteMany();
+  if (BANCO_SUMULAS_STJ.length > 0) {
+    await prisma.sumulasSTJ.createMany({
+      data: BANCO_SUMULAS_STJ.map((s) => ({
+        id: s.id,
+        titulo: s.titulo,
+        descricao: s.descricao,
+        secao: s.secao,
+        julgadoEm: s.julgadoEm,
+        djeDe: s.djeDe,
+      })),
+      skipDuplicates: false,
+    });
+  }
+
+  await prisma.sumulasTST.deleteMany();
+  if (BANCO_SUMULAS_TST.length > 0) {
+    await prisma.sumulasTST.createMany({
+      data: BANCO_SUMULAS_TST.map((s) => ({
+        id: s.id,
+        titulo: s.titulo,
+        subtitulo: s.subtitulo ?? "",
+        descricao: s.descricao,
       })),
       skipDuplicates: false,
     });

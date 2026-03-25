@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,6 +17,8 @@ const config: Config = {
           muted: "var(--lp-text-muted)",
           accent: "var(--lp-accent)",
           "accent-soft": "var(--lp-accent-soft)",
+          text: "var(--dark)",
+          input: "var(--lp-input-bg)",
         },
       },
       fontFamily: {

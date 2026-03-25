@@ -1,44 +1,68 @@
 import Link from "next/link";
 
+import { ArrowRight, Library } from "lucide-react";
+
+
+
 export default function AreaEstudoPage() {
+
   return (
+
     <div className="page active">
+
       <div className="page-header">
+
         <h1>Área de Estudo</h1>
-        <p>Escolha entre resumos teóricos e súmulas para revisão rápida.</p>
+
+        <p>Súmulas STF, STJ e TST para revisão objetiva.</p>
+
       </div>
 
-      <div className="cards-grid">
-        <article className="stat-card">
-          <div className="label">Resumos</div>
-          <div className="value" style={{ fontSize: "1.5rem" }}>
-            Estudo por matéria
-          </div>
-          <p style={{ margin: 0, fontSize: "0.875rem", color: "var(--mid)" }}>
-            Conteúdo sintetizado por disciplina.
-          </p>
-          <div style={{ marginTop: "0.5rem" }}>
-            <Link className="btn btn-primary" href="/resumos">
-              Abrir Resumos →
-            </Link>
-          </div>
-        </article>
 
-        <article className="stat-card">
+
+      <div className="cards-grid max-w-xl">
+
+        <article className="stat-card group">
+
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--info-bg)] text-[var(--info)]">
+
+            <Library className="h-5 w-5" strokeWidth={1.75} aria-hidden />
+
+          </div>
+
           <div className="label">Súmulas</div>
+
           <div className="value" style={{ fontSize: "1.5rem" }}>
+
             Revisão objetiva
+
           </div>
+
           <p style={{ margin: 0, fontSize: "0.875rem", color: "var(--mid)" }}>
-            STF e STJ em formato de cards.
+
+            STF, STJ e TST em formato de cards.
+
           </p>
-          <div style={{ marginTop: "0.5rem" }}>
-            <Link className="btn btn-primary" href="/sumulas">
-              Abrir Súmulas →
+
+          <div className="mt-2">
+
+            <Link className="btn btn-primary gap-2" href="/sumulas">
+
+              Abrir Súmulas
+
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={2} aria-hidden />
+
             </Link>
+
           </div>
+
         </article>
+
       </div>
+
     </div>
+
   );
+
 }
+

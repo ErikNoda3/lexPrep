@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { type Questao } from "@/lib/data/questions";
+import { formatEnunciado } from "@/lib/formatEnunciado";
 
 type Phase = "inicio" | "rodando" | "resultado";
 
@@ -314,7 +315,7 @@ export default function SimulationClient() {
         <div className="page active" id="simulado-rodando">
           <div className="simulado-header">
             <div>
-              <div style={{ fontSize: ".75rem", color: "#888", letterSpacing: ".08em", textTransform: "uppercase", marginBottom: "2px" }}>
+              <div style={{ fontSize: ".75rem", color: "rgba(255,255,255,0.55)", letterSpacing: ".08em", textTransform: "uppercase", marginBottom: "2px" }}>
                 Questão{" "}
                 <span id="sim-atual">{simIdx + 1}</span> de{" "}
                 <span id="sim-total">{simQuestoes.length}</span>
@@ -324,7 +325,7 @@ export default function SimulationClient() {
               </div>
             </div>
             <div style={{ textAlign: "center" }}>
-              <div style={{ fontSize: ".72rem", color: "#888", letterSpacing: ".1em", textTransform: "uppercase", marginBottom: "2px" }}>
+              <div style={{ fontSize: ".72rem", color: "rgba(255,255,255,0.55)", letterSpacing: ".1em", textTransform: "uppercase", marginBottom: "2px" }}>
                 Tempo restante
               </div>
               <div className="timer" id="sim-timer">
@@ -332,10 +333,10 @@ export default function SimulationClient() {
               </div>
             </div>
             <div style={{ textAlign: "right" }}>
-              <div style={{ fontSize: ".72rem", color: "#888", letterSpacing: ".08em", textTransform: "uppercase", marginBottom: "2px" }}>
+              <div style={{ fontSize: ".72rem", color: "rgba(255,255,255,0.55)", letterSpacing: ".08em", textTransform: "uppercase", marginBottom: "2px" }}>
                 Acertos
               </div>
-              <div style={{ fontSize: "1.2rem", color: "#AAA" }}>
+              <div style={{ fontSize: "1.2rem", color: "rgba(255,255,255,0.65)" }}>
                 <span style={{ color: "var(--gold-light)", fontWeight: 500 }}>
                   {simAcertos}
                 </span>
@@ -346,7 +347,7 @@ export default function SimulationClient() {
 
           <div id="sim-questao-container">
             <div className="question-card">
-              <div className="q-text">{q.enunciado}</div>
+              <div className="q-text">{formatEnunciado(q.enunciado)}</div>
               <ul className="options">
                 {q.opcoes.map((o, j) => {
                   const isCorrect = optionLetterFromIndex(j) === q.gabarito;
