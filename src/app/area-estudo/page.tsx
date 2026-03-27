@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ArrowRight, Library } from "lucide-react";
+import { privateAppRobots } from "@/lib/seo";
 
-
+export const metadata: Metadata = {
+  title: "Área de estudo",
+  description: "Acesso às súmulas STF, STJ e TST para revisão objetiva na preparação ao ENAM.",
+  robots: privateAppRobots,
+  alternates: { canonical: "/area-estudo" },
+};
 
 export default function AreaEstudoPage() {
 

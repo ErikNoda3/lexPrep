@@ -1,0 +1,16 @@
+# LexPrep ENAM
+
+> Plataforma web de estudos jurídicos para o Exame Nacional da Magistratura (ENAM), com súmulas STF/STJ/TST, banco de questões e simulados.
+
+## Site
+- Página inicial: /
+
+## Conteúdo público
+- Termos de uso: /termos
+- Política de privacidade: /privacidade
+
+## Acesso
+- Conteúdo de estudo e prática requer conta (login em /login).
+
+## Contacto
+- Defina aqui email ou URL oficial quando disponível.

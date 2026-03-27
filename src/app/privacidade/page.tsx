@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Política de privacidade — LexPrep",
-  description: "Política de privacidade do LexPrep ENAM.",
+  title: "Política de privacidade",
+  description:
+    "Política de privacidade do LexPrep ENAM: tratamento de dados pessoais na plataforma de preparação para o ENAM.",
+  alternates: { canonical: "/privacidade" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "Política de privacidade — LexPrep ENAM",
+    description: "Como tratamos os seus dados no LexPrep ENAM.",
+    url: "/privacidade",
+  },
 };
 
 export default function PrivacidadePage() {

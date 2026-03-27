@@ -11,6 +11,14 @@ function isPublicPath(pathname: string) {
   if (PUBLIC_PATHS.has(pathname)) return true;
   if (pathname.startsWith("/api/auth")) return true;
   if (pathname === "/api/session/init") return true;
+  /* SEO e metadados: rotas geradas pelo App Router (sem sessão) */
+  if (pathname === "/robots.txt") return true;
+  if (pathname === "/sitemap.xml") return true;
+  if (pathname === "/manifest.webmanifest") return true;
+  if (pathname === "/llms.txt") return true;
+  if (pathname.startsWith("/opengraph-image")) return true;
+  if (pathname.startsWith("/twitter-image")) return true;
+  if (pathname === "/icon" || pathname.startsWith("/icon?")) return true;
   return false;
 }
 

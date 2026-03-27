@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="8" fill="#1c1917"/>
+  <g fill="#fbbf24">
+    <!-- Travessa superior -->
+    <rect x="4" y="7" width="24" height="3" rx="0.5"/>
+    <!-- Coluna central -->
+    <rect x="15" y="10" width="2" height="14" rx="0.5"/>
+    <!-- Base -->
+    <rect x="8" y="24" width="16" height="2.5" rx="0.5"/>
+    <!-- Pratos da balança (triângulos) -->
+    <path d="M9 10 5 18h8L9 10z"/>
+    <path d="M23 10 27 18h-8L23 10z"/>
+  </g>
+</svg>

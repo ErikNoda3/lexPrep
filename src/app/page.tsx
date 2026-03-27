@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -10,6 +11,20 @@ import {
   ShieldCheck,
   Target,
 } from "lucide-react";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: `${SITE_NAME} — Súmulas STF, STJ, TST, questões e simulado para o ENAM`,
+  },
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: `${SITE_NAME} — preparação para o ENAM`,
+    description: SITE_TAGLINE,
+    url: "/",
+  },
+};
 
 export default function LandingPage() {
   const year = new Date().getFullYear();

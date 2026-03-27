@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Compass, Library, Target } from "lucide-react";
+import { privateAppRobots } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Início",
+  description: "Escolha entre súmulas, questões ou simulado para continuar a preparação ao ENAM.",
+  robots: privateAppRobots,
+  alternates: { canonical: "/dashboard" },
+};
 
 export default function DashboardPage() {
   return (

@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ListChecks, Timer } from "lucide-react";
+import { privateAppRobots } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Área de prática",
+  description: "Pratique com o banco de questões e simulados no estilo ENAM.",
+  robots: privateAppRobots,
+  alternates: { canonical: "/area-pratica" },
+};
 
 export default function AreaPraticaPage() {
   return (

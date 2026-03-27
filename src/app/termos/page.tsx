@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Termos de uso — LexPrep",
-  description: "Termos de uso do LexPrep ENAM.",
+  title: "Termos de uso",
+  description:
+    "Termos de uso do LexPrep ENAM: condições de acesso à plataforma de estudos jurídicos para o Exame Nacional da Magistratura.",
+  alternates: { canonical: "/termos" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "Termos de uso — LexPrep ENAM",
+    description: "Condições de utilização do serviço LexPrep ENAM.",
+    url: "/termos",
+  },
 };
 
 export default function TermosPage() {
