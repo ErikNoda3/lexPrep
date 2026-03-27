@@ -4,6 +4,7 @@ import AppShell from "@/components/AppShell";
 import SessionInit from "@/components/SessionInit";
 import SessionProvider from "@/components/SessionProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "LexPrep — ENAM",
@@ -34,6 +35,7 @@ export default function RootLayout({
           <SessionProvider>
             <SessionInit />
             <AppShell>{children}</AppShell>
+            <Analytics />
           </SessionProvider>
         </ThemeProvider>
       </body>
